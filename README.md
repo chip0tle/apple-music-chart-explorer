@@ -16,3 +16,7 @@ Let's have some fun with requests & marimo. Bring in some top 50 chart data of a
 4. Visualization layer using marimo
     - Show up/down position shifts based on previous day (calculated on historical dataset)
     - Dynamically switch between genres
+
+
+**OK so Apple Music API costs $99 for the year...maybe pivot to spotify because you can use it with a premium sub?**
+<https://developer.spotify.com/documentation/web-api/tutorials/getting-started>

@@ -8,6 +8,14 @@ dependencies = [
     "duckdb>=1.5.4",
     "marimo[lsp]>=0.23.10",
     "polars>=1.41.2",
+    "requests>=2.34.2",
     "ruff>=0.15.18",
     "ty>=0.0.50",
+]
+
+[dependency-groups]
+dev = [
+    "duckdb>=1.5.4",
+    "polars[pyarrow]>=1.41.2",
+    "sqlglot>=30.11.0",
 ]
