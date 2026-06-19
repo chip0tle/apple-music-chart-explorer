@@ -1,0 +1,13 @@
+[project]
+name = "apple-music-chart-explorer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "duckdb>=1.5.4",
+    "marimo[lsp]>=0.23.10",
+    "polars>=1.41.2",
+    "ruff>=0.15.18",
+    "ty>=0.0.50",
+]
