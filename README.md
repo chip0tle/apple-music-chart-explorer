@@ -18,7 +18,7 @@ Let's have some fun with requests & marimo. Find top songs on last.fm charts & f
     - User selects a song featured on the chart, use the artist to query Bandsintown
     - Default geo is NYC but maybe there's a way to use user geo?
 
-[Last.fm API docs] <https://www.last.fm/api>
-[Bandsintown API docs] <https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0>
+[Last.fm API docs](https://www.last.fm/api)
+[Bandsintown API docs](https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0)
 
-### Shout out to [public-apis] <https://github.com/public-apis/public-apis#index> repo!
+### Shout out to [public-apis](https://github.com/public-apis/public-apis#index) repo!
