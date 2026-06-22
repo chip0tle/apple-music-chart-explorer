@@ -1,12 +1,10 @@
-# Apple Music Chart Explorer
+# Last.fm Show Finder
 
-Let's have some fun with requests & marimo. Bring in some top 50 chart data of a set of genres, organize it in duckdb, use marimo to make some interactive charts.
+Let's have some fun with requests & marimo. Find top songs on last.fm charts & find nearby shows via Bandsintown.
 
 ## Plan
-1. Pull top 50 chart data for a set of genres
-    - Start with a set list of genres (Pop, Alternative, R&B, Country, Rock, Hip Hop)
-    - Maybe later figure out a way to more dynamically collect genres
-    - Chart data refreshes daily 12:00a UTC?
+1. Pull top 10 songs from US
+    - See if there are charts by genre; if yes, then also grab top 10 from Pop, R&B, Alternative
 2. Organize & store chart data in duckdb
     - Would like to store chart data going back 14 days; will need rolling replacement logic
     - Unsure if we can request historical data...
@@ -16,7 +14,11 @@ Let's have some fun with requests & marimo. Bring in some top 50 chart data of a
 4. Visualization layer using marimo
     - Show up/down position shifts based on previous day (calculated on historical dataset)
     - Dynamically switch between genres
+5. Find nearby shows via Bandsintown
+    - User selects a song featured on the chart, use the artist to query Bandsintown
+    - Default geo is NYC but maybe there's a way to use user geo?
 
+[Last.fm API docs]<https://www.last.fm/api>
+[Bandsintown API docs]<https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0>
 
-**OK so Apple Music API costs $99 for the year...maybe pivot to spotify because you can use it with a premium sub?**
-<https://developer.spotify.com/documentation/web-api/tutorials/getting-started>
+### Shout out to [public-apis]<https://github.com/public-apis/public-apis#index> repo!

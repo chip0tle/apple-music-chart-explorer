@@ -1,5 +1,5 @@
 [project]
-name = "apple-music-chart-explorer"
+name = "lastfm-show-finder"
 version = "0.1.0"
 description = "let's have some fun this beat is sick"
 readme = "README.md"
@@ -14,8 +14,4 @@ dependencies = [
 ]
 
 [dependency-groups]
-dev = [
-    "duckdb>=1.5.4",
-    "polars[pyarrow]>=1.41.2",
-    "sqlglot>=30.11.0",
-]
+dev = ["duckdb>=1.5.4", "polars[pyarrow]>=1.41.2", "sqlglot>=30.11.0"]
