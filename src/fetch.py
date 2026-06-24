@@ -1,8 +1,12 @@
+from typing import Any
 from requests.models import Response
 from requests.exceptions import HTTPError, Timeout, ConnectionError
 import requests
 
-def request_chart_data(api_key: str | None, url: str) -> Response | None:
+def get_as_json(api_key: str | None, url: str) -> dict | Any:
+    """
+    Request data from API, return json object
+    """
     try:
         r: Response = requests.get(url)
         r.raise_for_status()
@@ -17,5 +21,4 @@ def request_chart_data(api_key: str | None, url: str) -> Response | None:
     except Exception as e:
         print(f"Unexpected error: {e}")
     else:
-        # do something else?
-        return r
+        return r.json()
